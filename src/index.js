@@ -19,9 +19,16 @@ const Book = () => {
   );
 };
 
-const Image = () => <h2>Image Placeholder</h2>;
-const Title = () => <h2>Book Title</h2>;
-const Author = () => <h4>Author</h4>;
+const Image = () => (
+  <img
+    src="https://m.media-amazon.com/images/I/814L+vq01mL._AC_UY327_FMwebp_QL65_.jpg"
+    alt="Ikigai: The Japanese secret to a long and happy life"
+  />
+);
+const Title = () => (
+  <h2>Ikigai: The Japanese secret to a long and happy life</h2>
+);
+const Author = () => <h4>Francesc Miralles and Hector Garcia</h4>;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
