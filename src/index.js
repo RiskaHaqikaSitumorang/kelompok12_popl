@@ -13,15 +13,13 @@ const BookList = () => {
 };
 
 const Book = () => {
+  const image = "./images/ikigai-book-cover.webp";
   const title = "Ikigai: The Japanese secret to a long and happy life";
   const author = "Francesc Miralles and Hector Garcia";
 
   return (
     <article className="Book">
-      <img
-        src="https://m.media-amazon.com/images/I/814L+vq01mL._AC_UY327_FMwebp_QL65_.jpg"
-        alt="Ikigai: The Japanese secret to a long and happy life"
-      />
+      <img src={image} alt={title} />
       <h2>{title}</h2>
       <h4>{author}</h4>
     </article>
