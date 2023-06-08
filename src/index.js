@@ -31,7 +31,11 @@ const Image = () => (
 const Title = () => (
   <h2>Ikigai: The Japanese secret to a long and happy life</h2>
 );
-const Author = () => <h4>Francesc Miralles and Hector Garcia</h4>;
+const Author = () => (
+  <h4 style={{ color: "grey", fontSize: "0.75rem", marginTop: "0.5rem" }}>
+    Francesc Miralles and Hector Garcia
+  </h4>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
