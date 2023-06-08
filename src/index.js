@@ -31,11 +31,19 @@ const Image = () => (
 const Title = () => (
   <h2>Ikigai: The Japanese secret to a long and happy life</h2>
 );
-const Author = () => (
-  <h4 style={{ color: "grey", fontSize: "0.75rem", marginTop: "0.5rem" }}>
-    Francesc Miralles and Hector Garcia
-  </h4>
-);
+
+const Author = () => {
+  // Pass inline CSS by creating object first than pass the object to style attribute.
+  const inLineHeadingStyle = {
+    color: "grey",
+    fontSize: "0.75rem",
+    marginTop: "0.5rem",
+  };
+
+  return (
+    <h4 style={inLineHeadingStyle}>Francesc Miralles and Hector Garcia</h4>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
