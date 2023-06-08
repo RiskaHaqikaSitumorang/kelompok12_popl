@@ -13,35 +13,18 @@ const BookList = () => {
 };
 
 const Book = () => {
+  const title = "Ikigai: The Japanese secret to a long and happy life";
+  const author = "Francesc Miralles and Hector Garcia";
+
   return (
     <article className="Book">
-      <Image />
-      <Title />
-      <Author />
+      <img
+        src="https://m.media-amazon.com/images/I/814L+vq01mL._AC_UY327_FMwebp_QL65_.jpg"
+        alt="Ikigai: The Japanese secret to a long and happy life"
+      />
+      <h2>{title}</h2>
+      <h4>{author}</h4>
     </article>
-  );
-};
-
-const Image = () => (
-  <img
-    src="https://m.media-amazon.com/images/I/814L+vq01mL._AC_UY327_FMwebp_QL65_.jpg"
-    alt="Ikigai: The Japanese secret to a long and happy life"
-  />
-);
-const Title = () => (
-  <h2>Ikigai: The Japanese secret to a long and happy life</h2>
-);
-
-const Author = () => {
-  // Pass inline CSS by creating object first than pass the object to style attribute.
-  const inLineHeadingStyle = {
-    color: "grey",
-    fontSize: "0.75rem",
-    marginTop: "0.5rem",
-  };
-
-  return (
-    <h4 style={inLineHeadingStyle}>Francesc Miralles and Hector Garcia</h4>
   );
 };
 
