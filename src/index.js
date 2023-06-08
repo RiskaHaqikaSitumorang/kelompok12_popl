@@ -1,9 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import "./index.css";
+
 const BookList = () => {
   return (
-    <section>
+    <section className="BookList">
+      <Book />
       <Book />
     </section>
   );
@@ -11,7 +14,7 @@ const BookList = () => {
 
 const Book = () => {
   return (
-    <article>
+    <article className="Book">
       <Image />
       <Title />
       <Author />
