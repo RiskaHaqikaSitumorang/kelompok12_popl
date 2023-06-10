@@ -9,12 +9,14 @@ const books = [
     title: "Ikigai: The Japanese secret to a long and happy life",
     image:
       "https://m.media-amazon.com/images/I/51xwGSNX-EL._SX356_BO1,204,203,200_.jpg",
+    id: 1,
   },
   {
     author: " Napoleon Hill",
     title: "Think and Grow Rich",
     image:
       "https://m.media-amazon.com/images/I/41CqlzJS-NL._SX322_BO1,204,203,200_.jpg",
+    id: 2,
   },
 ];
 
@@ -22,8 +24,8 @@ const BookList = () => {
   return (
     <section className="BookList">
       {books.map((books) => {
-        const { author, title, image } = books;
-        return <Book author={author} title={title} image={image} />;
+        const { author, title, image, id } = books;
+        return <Book author={author} title={title} image={image} key={id} />;
       })}
     </section>
   );
