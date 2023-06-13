@@ -21,44 +21,27 @@ const books = [
 ];
 
 const BookList = () => {
+  const getBook = (id) => {
+    const book = books.find((book) => book.id === id);
+    console.log(book);
+  };
+
   return (
     <section className="BookList">
-      <EventExample />
       {books.map((book) => {
-        return <Book {...book} key={book.id} />;
+        return <Book {...book} key={book.id} getBook={getBook} />;
       })}
     </section>
   );
 };
 
-const EventExample = () => {
-  const handleFormInput = (eventObject) => {
-    console.log(eventObject); // Return event object
-    console.log(eventObject.target); // Return HTML element where the event is register
-    console.log(eventObject.target.name);
-    console.log(eventObject.target.value);
-    console.log("Handle form input");
-  };
-  const handelButtonClick = (eventObject) => {
-    alert("Handle button click");
-  };
-  return (
-    <section>
-      <form>
-        <h2>Form</h2>
-        <input type="text" name="example" onChange={handleFormInput} />
-      </form>
-      <button onClick={handelButtonClick}>Click</button>
-    </section>
-  );
-};
-
-const Book = ({ author, title, image }) => {
+const Book = ({ author, title, image, getBook, id }) => {
   return (
     <article className="Book">
       <img src={image} alt={title} />
       <h2>{title}</h2>
       <h4>{author}</h4>
+      <button onClick={getBook(id)}>Click</button>
     </article>
   );
 };
