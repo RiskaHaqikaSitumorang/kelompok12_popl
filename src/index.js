@@ -36,12 +36,17 @@ const BookList = () => {
 };
 
 const Book = ({ author, title, image, getBook, id }) => {
+  // Adding getBook function inside the getSingleBook function. By doing this getBook function will now not be called when page load. But it will called when use click the button and it will called getSingleBook function after that it will invoke getBook function which is nested inside.
+  const getSingleBook = () => {
+    getBook(id);
+  };
+
   return (
     <article className="Book">
       <img src={image} alt={title} />
       <h2>{title}</h2>
       <h4>{author}</h4>
-      <button onClick={getBook(id)}>Click</button>
+      <button onClick={getSingleBook}>Click</button>
     </article>
   );
 };
