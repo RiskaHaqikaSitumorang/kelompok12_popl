@@ -36,18 +36,19 @@ const BookList = () => {
 };
 
 const Book = ({ author, title, image, getBook, id }) => {
-  // Adding getBook function inside the getSingleBook function. By doing this getBook function will now not be called when page load. But it will called when use click the button and it will called getSingleBook function after that it will invoke getBook function which is nested inside.
-  // In other word we need to use reference rather than directly passing function. In this case reference is the getSingleBook function and main function which we are trying to executed when button is clicked is getBook.
-  const getSingleBook = () => {
-    getBook(id);
-  };
-
   return (
     <article className="Book">
       <img src={image} alt={title} />
       <h2>{title}</h2>
       <h4>{author}</h4>
-      <button onClick={getSingleBook}>Click</button>
+      <button
+        /* You can also use anonymous arrow function as reference and pass your function that you want to executed when button click */
+        onClick={() => {
+          getBook(id);
+        }}
+      >
+        Click
+      </button>
     </article>
   );
 };
