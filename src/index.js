@@ -23,9 +23,32 @@ const books = [
 const BookList = () => {
   return (
     <section className="BookList">
+      <EventExample />
       {books.map((book) => {
         return <Book {...book} key={book.id} />;
       })}
+    </section>
+  );
+};
+
+const EventExample = () => {
+  const handleFormInput = (eventObject) => {
+    console.log(eventObject); // Return event object
+    console.log(eventObject.target); // Return HTML element where the event is register
+    console.log(eventObject.target.name);
+    console.log(eventObject.target.value);
+    console.log("Handle form input");
+  };
+  const handelButtonClick = (eventObject) => {
+    alert("Handle button click");
+  };
+  return (
+    <section>
+      <form>
+        <h2>Form</h2>
+        <input type="text" name="example" onChange={handleFormInput} />
+      </form>
+      <button onClick={handelButtonClick}>Click</button>
     </section>
   );
 };
