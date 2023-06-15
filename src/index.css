@@ -30,6 +30,7 @@ body {
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
+  position: relative;
 }
 
 .Book img {
@@ -46,4 +47,10 @@ body {
   color: grey;
   font-size: 0.75rem;
   margin-top: 0.5rem;
+}
+
+.BookNumber {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
