@@ -35,7 +35,7 @@ body {
 
 .Book img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .Book h2 {
@@ -53,4 +53,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: orange;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  color: white;
 }
