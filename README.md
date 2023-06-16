@@ -1,10 +1,19 @@
 # React Basic
+
 - This repository contains the basic concepts and fundamental of React 18.
 
 ## Acknowledgements
 
 - [Coding Addict](https://www.youtube.com/@CodingAddict)
 - [React playlist](https://youtube.com/playlist?list=PLnHJACx3NwAep5koWkniVHw8PK7dWCO21)
+
+## Project
+
+- [Best seller book](https://best-seller-books-amazone.netlify.app/)
+
+## Screenshots
+
+- ![image](./src/images/best-seller-books-website-mockup.png)
 
 ## Table of Contents
 
@@ -30,3 +39,5 @@
 20. Prop drilling
 21. ES6 modules
 22. Local images (src folder)
+23. Build folder
+24. Deploy
