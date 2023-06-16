@@ -11,6 +11,9 @@
 
 - [Best seller book](https://best-seller-books-amazone.netlify.app/)
 
+## Project Description
+- It's clone of amazone's best seller book webpage  
+
 ## Screenshots
 
 <img src="./src/images/best-seller-books-website-mockup.png" width="80%">
