@@ -13,7 +13,7 @@
 
 ## Screenshots
 
-- ![image](./src/images/best-seller-books-website-mockup.png)
+<img src="./src/images/best-seller-books-website-mockup.png" width="50%" height="50%">
 
 ## Table of Contents
 
