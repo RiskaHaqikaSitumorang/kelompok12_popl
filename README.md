@@ -13,7 +13,7 @@
 
 ## Screenshots
 
-<img src="./src/images/best-seller-books-website-mockup.png" width="90%">
+<img src="./src/images/best-seller-books-website-mockup.png" width="80%">
 
 ## Table of Contents
 
