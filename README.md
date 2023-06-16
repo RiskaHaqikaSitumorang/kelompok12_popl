@@ -4,7 +4,7 @@
 
 ## Acknowledgements
 
-- [Coding Addict](https://www.youtube.com/@CodingAddict)
+- [Coding addict](https://www.youtube.com/@CodingAddict)
 - [React playlist](https://youtube.com/playlist?list=PLnHJACx3NwAep5koWkniVHw8PK7dWCO21)
 
 ## Project
@@ -12,7 +12,7 @@
 - [Best seller book](https://best-seller-books-amazone.netlify.app/)
 
 ## Project Description
-- It's clone of amazone's best seller book webpage  
+- It's clone of amazone's best seller book webpage.  
 
 ## Screenshots
 
