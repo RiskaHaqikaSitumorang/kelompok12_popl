@@ -1,34 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import "./index.css";
+import { books } from "./books";
+import { Book } from "./book";
+
 const BookList = () => {
   return (
-    <section>
-      <Book />
-    </section>
+    <>
+      <h1>Amazone Best Seller</h1>
+      <section className="BookList">
+        {books.map((book, index) => {
+          return <Book {...book} key={book.id} bookNumber={index} />;
+        })}
+      </section>
+    </>
   );
 };
-
-const Book = () => {
-  return (
-    <article>
-      <Image />
-      <Title />
-      <Author />
-    </article>
-  );
-};
-
-const Image = () => (
-  <img
-    src="https://m.media-amazon.com/images/I/814L+vq01mL._AC_UY327_FMwebp_QL65_.jpg"
-    alt="Ikigai: The Japanese secret to a long and happy life"
-  />
-);
-const Title = () => (
-  <h2>Ikigai: The Japanese secret to a long and happy life</h2>
-);
-const Author = () => <h4>Francesc Miralles and Hector Garcia</h4>;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
