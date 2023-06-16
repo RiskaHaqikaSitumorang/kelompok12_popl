@@ -11,6 +11,12 @@ body {
   color: black;
 }
 
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 4rem;
+}
+
 .BookList {
   width: 90vw;
   max-width: 1170px;
